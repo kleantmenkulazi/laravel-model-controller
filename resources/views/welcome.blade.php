@@ -18,11 +18,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Il padrino</td>
-        <td></td>
-      </tr>
+        @foreach ($movies as $movie)
+        <tr>
+            <th scope="row">{{ $movies->id }}</th>
+            <td>{{ $movies->title }}</td>
+            <td></td>
+          </tr>
+        @endforeach
+      
     </tbody>
   </table>
 
