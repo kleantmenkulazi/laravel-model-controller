@@ -11,7 +11,7 @@ use App\Models\Movie;
 class MainController extends Controller
 {
     public function index() {
-        Route::get('/', function () {
+        
             $movies = Movie::all();
             dd($movies);
             
@@ -21,6 +21,6 @@ class MainController extends Controller
             //      'movies' => $movies
             // ]);
             
-        });
+        
     }
 }
